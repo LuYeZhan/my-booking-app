@@ -2,15 +2,45 @@
 // Logo
 .logo {
   height: 3.25rem;
+  margin-left: 3rem;
 }
 
 ///////////////////////////////////
 // Search
 .search {
+  background-color: orangered;
+  flex: 0 0 40%;
+
   &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--color-grey-light-2);
+    border: none;
+    padding: 0.7rem 0.2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all 0.2s;
+    margin-right: -3.5rem;
+
+    &:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3);
+    }
   }
 
   &__button {
+    border: none;
+    background-color: var(--color-grey-light-2);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
   }
 
   &__icon {
@@ -23,6 +53,7 @@
 // User navigation
 
 .user-nav {
+  background-color: greenyellow;
   &__icon-box {
   }
 
